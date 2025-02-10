@@ -1,6 +1,6 @@
-# Typer
+# Typer (PowerShell)
 
-This Python script emulates keyboard input to type text from a file. It's designed for situations where pasting is restricted, effectively acting as a "typer" that reads text from a file and simulates keyboard input.
+This PowerShell script emulates keyboard input to type text from a file. It's designed for situations where pasting is restricted, effectively acting as a "typer" that reads text from a file and simulates keyboard input.
 
 ## Features
 
@@ -10,89 +10,29 @@ This Python script emulates keyboard input to type text from a file. It's design
 
 ## Installation
 
-1.  Clone the repository:
+1.  Clone the repository (or download the script directly):
 
-    ```bash
+    ```powershell
     git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://www.google.com/search?q=https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
     ```
 
 2.  Navigate to the project directory:
 
-    ```bash
+    ```powershell
     cd typer
     ```
 
-3.  (Optional but Recommended) Create a virtual environment:
-    ```bash
-    python3 -m venv .venv  # Create a virtual environment
-    source .venv/bin/activate  # Activate the virtual environment (Linux/macOS)
-    .venv\Scripts\activate  # Activate the virtual environment (Windows)
-    ```
-
-4. Install the required library:
-    ```bash
-    pip install pyautogui
-    ```
 ## Usage
 
-1.  Create a file named `input.txt` in the same directory as `type.py`.
+1.  Create a file named `input.txt` in the same directory as `type.ps1`.
 2.  Paste the text you want to type into `input.txt`.
-3.  Run the `type.py` script:
+3.  Run the `type.ps1` script:
 
-    ```bash
-    python type.py
+    ```powershell
+    .\type.ps1
     ```
 
-**Important:** Ensure that the application where you want the text to be typed is active and has focus *before* running the script.  The script will start typing immediately.  It's recommended to test with a text editor first.
-
-## Example `input.txt`
-Markdown
-
-# Typer
-
-This Python script emulates keyboard input to type text from a file. It's designed for situations where pasting is restricted, effectively acting as a "typer" that reads text from a file and simulates keyboard input.
-
-## Features
-
-* Reads text from an `input.txt` file.
-* Simulates keyboard input, character by character.
-* Useful for situations where copy-pasting is disabled or restricted.
-
-## Installation
-
-1.  Clone the repository:
-
-    ```bash
-    git clone [[https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/nadzzzzzzz/TYPER).git](https://www.google.com/search?q=https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
-    ```
-2.  Navigate to the project directory:
-
-    ```bash
-    cd typer
-    ```
-
-3.  (Optional but Recommended) Create a virtual environment:
-    ```bash
-    python3 -m venv .venv  # Create a virtual environment
-    source .venv/bin/activate  # Activate the virtual environment (Linux/macOS)
-    .venv\Scripts\activate  # Activate the virtual environment (Windows)
-    ```
-
-4. Install the required library:
-    ```bash
-    pip install pyautogui
-    ```
-## Usage
-
-1.  Create a file named `input.txt` in the same directory as `type.py`.
-2.  Paste the text you want to type into `input.txt`.
-3.  Run the `type.py` script:
-
-    ```bash
-    python type.py
-    ```
-
-**Important:** Ensure that the application where you want the text to be typed is active and has focus *before* running the script.  The script will start typing immediately.  It's recommended to test with a text editor first.
+**Important:** Ensure that the application where you want the text to be typed is active and has focus *before* running the script.  The script will start typing immediately. It's highly recommended to test with a text editor first.
 
 ## Example `input.txt`
 
@@ -110,8 +50,14 @@ Contributions are welcome! Feel free to submit pull requests or open issues.
 
 ## Disclaimer
 
-Use this script responsibly.  Avoid using it in ways that could be considered unethical or disruptive. The author is not responsible for any misuse of this tool.  Be mindful of where you are typing and ensure you have the appropriate permissions.
+Use this script responsibly. Avoid using it in ways that could be considered unethical or disruptive. The author is not responsible for any misuse of this tool. Be mindful of where you are typing and ensure you have the appropriate permissions.
 
 ## Author
 
-[nadzzzzzzz/GitHub Username]
+[Your Name/GitHub Username]
+Key changes for PowerShell:
+
+File extension is .ps1
+Running the script uses .\type.ps1
+No need for a virtual environment or pip since PowerShell handles dependencies differently. If your script does have dependencies (rare for this type of script), you'd handle those within PowerShell itself (e.g., using Install-Module).
+The rest of the structure and explanations are generally the same, but now tailored to the PowerShell context.
